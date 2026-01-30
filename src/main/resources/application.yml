@@ -1,0 +1,7 @@
+server:
+  port: 9191   # Camel REST consumer will be exposed on this port
+
+logging:
+  level:
+    root: INFO
+    org.apache.camel: INFO
