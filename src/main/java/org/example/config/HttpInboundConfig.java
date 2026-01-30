@@ -1,5 +1,6 @@
 package org.example.config;
 
+import org.example.dto.GetUserRequest;
 import org.example.dto.UserResponse;
 import org.example.dto.XmlUser;
 import org.example.dto.XmlUserResult;
@@ -59,7 +60,7 @@ public class HttpInboundConfig {
     @Bean
     public Jaxb2Marshaller jaxb2Marshaller() {
         Jaxb2Marshaller m = new Jaxb2Marshaller();
-        m.setClassesToBeBound(XmlUser.class, XmlUserResult.class);
+        m.setClassesToBeBound(XmlUser.class, XmlUserResult.class, GetUserRequest.class);
         return m;
     }
 
